@@ -1,10 +1,11 @@
 package com.example.cadastro_usuario.controller;
 
 import com.example.cadastro_usuario.business.UsuarioService;
+import org.springframework.web.bind.annotation.*;
 import com.example.cadastro_usuario.infrastructure.entities.Usuario;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/usuario")
