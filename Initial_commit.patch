@@ -1,0 +1,679 @@
+Subject: [PATCH] Initial commit
+---
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/.gitignore	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/cadastro-usuario-master.iml
+===================================================================
+diff --git a/.idea/cadastro-usuario-master.iml b/.idea/cadastro-usuario-master.iml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/cadastro-usuario-master.iml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/compiler.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,21 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Annotation profile for cadastro-usuario" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <processorPath useClasspath="false">
++          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
++        </processorPath>
++        <module name="cadastro-usuario" />
++      </profile>
++    </annotationProcessing>
++  </component>
++  <component name="JavacSettings">
++    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="cadastro-usuario" options="-parameters" />
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/encodings.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/cadastro-usuario-master/src/main/java" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/jarRepositories.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/misc.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/cadastro-usuario-master/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/modules.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/cadastro-usuario-master.iml" filepath="$PROJECT_DIR$/.idea/cadastro-usuario-master.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/.idea/vcs.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: cadastro-usuario-master/.gitignore
+===================================================================
+diff --git a/cadastro-usuario-master/.gitignore b/cadastro-usuario-master/.gitignore
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/.gitignore	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,33 @@
++HELP.md
++target/
++.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### STS ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### IntelliJ IDEA ###
++.idea
++*.iws
++*.iml
++*.ipr
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
+Index: cadastro-usuario-master/.mvn/wrapper/maven-wrapper.properties
+===================================================================
+diff --git a/cadastro-usuario-master/.mvn/wrapper/maven-wrapper.properties b/cadastro-usuario-master/.mvn/wrapper/maven-wrapper.properties
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/.mvn/wrapper/maven-wrapper.properties	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,3 @@
++wrapperVersion=3.3.4
++distributionType=only-script
++distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip
+Index: cadastro-usuario-master/pom.xml
+===================================================================
+diff --git a/cadastro-usuario-master/pom.xml b/cadastro-usuario-master/pom.xml
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/pom.xml	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,88 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>3.5.6</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>com.example</groupId>
++	<artifactId>cadastro-usuario</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>cadastro-usuario</name>
++	<description>Demo project for Spring Boot</description>
++	<url/>
++	<licenses>
++		<license/>
++	</licenses>
++	<developers>
++		<developer/>
++	</developers>
++	<scm>
++		<connection/>
++		<developerConnection/>
++		<tag/>
++		<url/>
++	</scm>
++	<properties>
++		<java.version>21</java.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-data-jpa</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>com.h2database</groupId>
++			<artifactId>h2</artifactId>
++			<scope>runtime</scope>
++		</dependency>
++		<dependency>
++			<groupId>org.projectlombok</groupId>
++			<artifactId>lombok</artifactId>
++			<optional>true</optional>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.apache.maven.plugins</groupId>
++				<artifactId>maven-compiler-plugin</artifactId>
++				<configuration>
++					<annotationProcessorPaths>
++						<path>
++							<groupId>org.projectlombok</groupId>
++							<artifactId>lombok</artifactId>
++						</path>
++					</annotationProcessorPaths>
++				</configuration>
++			</plugin>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++				<configuration>
++					<excludes>
++						<exclude>
++							<groupId>org.projectlombok</groupId>
++							<artifactId>lombok</artifactId>
++						</exclude>
++					</excludes>
++				</configuration>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/CadastroUsuarioApplication.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/CadastroUsuarioApplication.java b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/CadastroUsuarioApplication.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/CadastroUsuarioApplication.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,13 @@
++package com.example.cadastro_usuario;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class CadastroUsuarioApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(CadastroUsuarioApplication.class, args);
++	}
++
++}
+Index: cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/business/UsuarioService.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/business/UsuarioService.java b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/business/UsuarioService.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/business/UsuarioService.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,39 @@
++package com.example.cadastro_usuario.business;
++
++import com.example.cadastro_usuario.infrastructure.entities.Usuario;
++import com.example.cadastro_usuario.infrastructure.repository.UsuarioRepository;
++import org.springframework.stereotype.Service;
++
++@Service
++public class UsuarioService {
++    private final UsuarioRepository repository;
++
++    public UsuarioService(UsuarioRepository repository){
++        this.repository = repository;
++    }
++
++    public void salvarUsuario(Usuario usuario){
++        repository.saveAndFlush(usuario);
++    }
++
++    public Usuario buscarUsuarioPorEmail(String email){
++        return repository.findByEmail(email).orElseThrow(
++                () -> new RuntimeException("Email não encontrado.")
++        );
++    }
++
++    public void deletarUsuarioPorEmail(String email){
++        repository.deleteByEmail(email);
++    }
++
++    public void atualizarUsuarioPorId(Integer id, Usuario usuario){
++        Usuario usuarioEntity = repository.findById(id).orElseThrow(()->
++                new RuntimeException("Usuário não encontrado."));
++        Usuario usuarioAtualizado = Usuario.builder()
++                .email(usuario.getEmail() != null ? usuario.getEmail(): usuarioEntity.getEmail())
++                .nome(usuario.getNome())
++                .id(usuarioEntity.getId())
++                .build();
++        repository.saveAndFlush(usuarioAtualizado);
++    }
++}
+Index: cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/controller/UsuarioController.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/controller/UsuarioController.java b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/controller/UsuarioController.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/controller/UsuarioController.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,40 @@
++package com.example.cadastro_usuario.controller;
++
++import com.example.cadastro_usuario.business.UsuarioService;
++import com.example.cadastro_usuario.infrastructure.entities.Usuario;
++import lombok.RequiredArgsConstructor;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/usuario")
++@RequiredArgsConstructor
++
++public class UsuarioController {
++    private final UsuarioService usuarioService;
++
++    @PostMapping
++    public ResponseEntity<Void> salvarUsuario(@RequestBody Usuario usuario){
++        usuarioService.salvarUsuario(usuario);
++        return ResponseEntity.ok().build();
++    }
++
++    @GetMapping
++    public ResponseEntity<Usuario> buscarUsuarioPorEmail(@RequestParam String email){
++        return ResponseEntity.ok(usuarioService.buscarUsuarioPorEmail(email));
++    }
++
++    @DeleteMapping
++    public ResponseEntity<Void> deletarUsuarioPorEmail(@RequestParam String email){
++        usuarioService.deletarUsuarioPorEmail(email);
++        return ResponseEntity.ok().build();
++    }
++
++    @PutMapping
++    public ResponseEntity<Void> atualizarUsuarioPorId(@RequestParam Integer id,
++                                                      @RequestBody Usuario usuario  )
++    {
++        usuarioService.atualizarUsuarioPorId(id, usuario);
++        return ResponseEntity.ok().build();
++    }
++}
+Index: cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/entities/Usuario.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/entities/Usuario.java b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/entities/Usuario.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/entities/Usuario.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,27 @@
++package com.example.cadastro_usuario.infrastructure.entities;
++
++import jakarta.persistence.*;
++import lombok.*;
++
++@Getter
++@Setter
++@AllArgsConstructor
++@NoArgsConstructor
++@Builder
++@Table(name = "usuario")
++@Entity
++public class Usuario {
++    @Id
++    @GeneratedValue(strategy = GenerationType.AUTO)
++    private Integer id;
++
++    @Column(name = "email", unique = true)
++    private String email;
++
++    @Column(name = "nome", unique = true)
++    private String nome;
++
++   /* @Column(name = "senha")
++    private String senha;*/
++
++}
+Index: cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/repository/UsuarioRepository.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/repository/UsuarioRepository.java b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/repository/UsuarioRepository.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/java/com/example/cadastro_usuario/infrastructure/repository/UsuarioRepository.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,16 @@
++package com.example.cadastro_usuario.infrastructure.repository;
++
++import com.example.cadastro_usuario.infrastructure.entities.Usuario;
++import jakarta.transaction.Transactional;
++import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
++import org.springframework.data.jpa.repository.JpaRepository;
++
++import java.util.Optional;
++
++public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
++
++    Optional<Usuario> findByEmail(String email);
++
++    @Transactional
++    void deleteByEmail(String email);
++}
+Index: cadastro-usuario-master/src/main/resources/application.properties
+===================================================================
+diff --git a/cadastro-usuario-master/src/main/resources/application.properties b/cadastro-usuario-master/src/main/resources/application.properties
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/main/resources/application.properties	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,8 @@
++spring.application.name=cadastro-usuario
++spring.h2.console.enable=true
++spring.h2.console.path=/h2.console
++spring.datasource.url=jdbc:h2:mem:testdb
++spring.datasource.driverClassName=org.h2.Driver
++spring.datasource.username=Carlinhos
++spring.datasource.password=
++server.port = 8080
+\ No newline at end of file
+Index: cadastro-usuario-master/src/test/java/com/example/cadastro_usuario/CadastroUsuarioApplicationTests.java
+===================================================================
+diff --git a/cadastro-usuario-master/src/test/java/com/example/cadastro_usuario/CadastroUsuarioApplicationTests.java b/cadastro-usuario-master/src/test/java/com/example/cadastro_usuario/CadastroUsuarioApplicationTests.java
+new file mode 100644
+--- /dev/null	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
++++ b/cadastro-usuario-master/src/test/java/com/example/cadastro_usuario/CadastroUsuarioApplicationTests.java	(revision 28dd535a2ced1f0c4add99299a8eb23a10848192)
+@@ -0,0 +1,13 @@
++package com.example.cadastro_usuario;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class CadastroUsuarioApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+diff --git a/cadastro-usuario-master/.gitattributes b/cadastro-usuario-master/.gitattributes
+new file mode 100644
+index 0000000000000000000000000000000000000000..0ac0d337a2fd22972d6933a062fe87a87d3b22d9
+GIT binary patch
+literal 40
+kc%0MEEz2ucC`qj-QAo|tvCT>2<<ini&P_oGB^QAN0T-AJF8}}l
+
+diff --git a/cadastro-usuario-master/mvnw b/cadastro-usuario-master/mvnw
+new file mode 100644
+index 0000000000000000000000000000000000000000..4f4e2c29c98e9f4206d12a0f2210922f77bf3a1a
+GIT binary patch
+literal 12085
+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
+R+*p2lOOA@=rNY{X{(n}0oKgS)
+
+diff --git a/cadastro-usuario-master/mvnw.cmd b/cadastro-usuario-master/mvnw.cmd
+new file mode 100644
+index 0000000000000000000000000000000000000000..5761d948924c19571d27b465c519b2e2f9e30351
+GIT binary patch
+literal 8481
+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
+
